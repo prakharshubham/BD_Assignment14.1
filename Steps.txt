@@ -1,0 +1,10 @@
+create table demo_temp(
+    > full_date string, zip int, temperature int)
+    > ROW FORMAT DELIMITED FIELDS TERMINATED BY ',';
+OK
+Time taken: 1.133 seconds
+hive> load data local inpath '/home/acadgild/hive/dataset_Session 14.txt' into table demo_temp;
+Loading data to table default.demo_temp
+Table default.demo_temp stats: [numFiles=1, totalSize=437]
+OK
+Time taken: 1.773 seconds
